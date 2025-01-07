@@ -7,10 +7,11 @@
         <p>Sigue las instrucciones para arrancar a participar!</p>
 
 
-        <asp:Label ID="LabelTboVoucher" runat="server" Text="Ingresa Tu Codigo de Voucher"></asp:Label>
-        <asp:TextBox ID="TextBoxVoucher" placeholder="XXXXXXXXXXXXXXXX" runat="server"></asp:TextBox>
+        <asp:Label ID="LabelVoucher" runat="server" Text="Ingresa Tu Codigo de Voucher"></asp:Label>
+        <asp:TextBox ID="TBoVoucher" placeholder="XXXXXXXXXXXXXXXX" runat="server"></asp:TextBox>
+        <asp:Button ID="BtnSiguiente" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
 
-
+        <a href="PromoDos"></a>
 
     </main>
 </asp:Content>

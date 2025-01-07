@@ -15,21 +15,30 @@ namespace Web
     {
 
         /// <summary>
-        /// LabelTboVoucher control.
+        /// LabelVoucher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelTboVoucher;
+        protected global::System.Web.UI.WebControls.Label LabelVoucher;
 
         /// <summary>
-        /// TextBoxVoucher control.
+        /// TBoVoucher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxVoucher;
+        protected global::System.Web.UI.WebControls.TextBox TBoVoucher;
+
+        /// <summary>
+        /// BtnSiguiente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSiguiente;
     }
 }
