@@ -185,6 +185,7 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoDatos.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Promo.aspx.cs">
       <DependentUpon>Promo.aspx</DependentUpon>
