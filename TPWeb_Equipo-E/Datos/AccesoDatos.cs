@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Data;
+using System.Text;
+using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace Web
+namespace Datos
 {
     public class AccesoDatos
     {
@@ -18,7 +18,7 @@ namespace Web
         {
             get { return lector; }
         }
-
+           
 
         public AccesoDatos()
         {
@@ -32,7 +32,7 @@ namespace Web
             comando.CommandText = consulta;//asignamos la consulta que se va a ejecutar
 
         }
-        public void setearParametro(string nombre, string valor)
+        public void setearParametroDesp(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);
         }
@@ -49,7 +49,7 @@ namespace Web
             {
                 throw ex;
             }
-
+            
         }
 
         public void ejecutarAccion()//ejecuta consulta nonquery de insercion de datos
@@ -58,17 +58,17 @@ namespace Web
             try
             {
                 conexion.Open();
-                comando.ExecuteNonQuery();
+                comando.ExecuteNonQuery(); 
             }
-            catch (Exception ex)
+            catch(Exception ex) 
             {
                 throw ex;
             }
-        }
+        } 
 
         public void cerrarConexion()
         {
-            if (lector != null)
+            if (lector !=null)
                 lector.Close();
             conexion.Close();
         }

@@ -19,6 +19,13 @@ namespace Web
         protected void BtnSiguiente_Click(object sender, EventArgs e)
         {
             Response.Redirect("PromoDos.aspx", false);
+
+            //string codigoIng = TboVoucher.Text.Trim();
+            //if (codigoIng!=)
+            {
+                
+            }
+
         }
     }
 }
