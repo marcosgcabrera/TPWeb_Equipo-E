@@ -18,13 +18,25 @@ namespace Web
 
         protected void BtnSiguiente_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PromoDos.aspx", false);
+            string codigoIng = TBoVoucher.Text.Trim();
 
-            //string codigoIng = TboVoucher.Text.Trim();
-            //if (codigoIng!=)
+            var negocio = new Negocio.VoucherNegocio();
+
+            bool voucherValido = negocio.VerificarVoucher(codigoIng);
+
+            if (voucherValido)
             {
-                
+                negocio.AsignarVoucher(codigoIng);
+                Response.Redirect("PromoDos.aspx", false);
             }
+            else
+            {
+                string script = "alert('El Codigo ya fue canjeado o no es uno Valido!');";
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+
+            }
+            
+            
 
         }
     }

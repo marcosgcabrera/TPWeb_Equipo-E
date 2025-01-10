@@ -10,6 +10,8 @@
         <asp:Label ID="LabelVoucher" runat="server" Text="Ingresa Tu Codigo de Voucher"></asp:Label>
         <asp:TextBox ID="TBoVoucher" placeholder="XXXXXXXXXXXXXXXX" runat="server"></asp:TextBox>
         <asp:Button ID="BtnSiguiente" runat="server" Text="Siguiente" OnClick="BtnSiguiente_Click" />
+        <asp:Label ID="ErrorMessage" runat="server" ForeColor="Red" Visible="false"></asp:Label>
+
 
         <a href="PromoDos"></a>
 
