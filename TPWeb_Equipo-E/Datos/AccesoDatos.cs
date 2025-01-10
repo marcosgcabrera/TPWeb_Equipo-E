@@ -32,7 +32,7 @@ namespace Datos
             comando.CommandText = consulta;//asignamos la consulta que se va a ejecutar
 
         }
-        public void setearParametroDesp(string nombre, object valor)
+        public void setearParametro(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);
         }
