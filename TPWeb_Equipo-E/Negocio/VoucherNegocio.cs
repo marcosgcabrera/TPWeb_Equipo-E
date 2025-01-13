@@ -39,8 +39,8 @@ namespace Negocio
             {
                 throw ex;
             }
-            
-        
+
+
         }
 
         public void AsignarVoucher(string codigoIng)

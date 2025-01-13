@@ -64,7 +64,11 @@ namespace Datos
             {
                 throw ex;
             }
-        } 
+            finally
+            {
+                conexion.Close();
+            }
+        }
 
         public void cerrarConexion()
         {

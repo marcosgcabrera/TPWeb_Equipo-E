@@ -12,7 +12,7 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
 
@@ -27,6 +27,7 @@ namespace Web
             if (voucherValido)
             {
                 negocio.AsignarVoucher(codigoIng);
+                Session.Add("codigo", codigoIng);
                 Response.Redirect("PromoDos.aspx", false);
             }
             else

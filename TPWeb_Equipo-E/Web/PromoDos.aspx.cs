@@ -12,12 +12,12 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
-        {
-
+        { 
+            Response.Redirect("PromoTres.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
