@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %></h2>
-        <h5>Ingresa los datos para finalizar el proceso y participar!</h5>
+        <h5>¡Ingresa los datos para finalizar el proceso y participar!</h5>
 
         <div class="row">
             <div class="col-7">
