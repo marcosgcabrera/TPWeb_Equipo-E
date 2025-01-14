@@ -5,27 +5,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <main aria-labelledby="title">
         <h2> Elegi tu Premio! </h2>
-    <div>
-    <img src="..." class="img-thumbnail" alt="...">
-        <div>
-            
-        <asp:Button Text="Premio 1" CssClass="btn btn-primary" ID="btnAceptar" OnClick="btnAceptar_Click" runat="server"/>
-            </div>
+   
+    
+ <div class="row row-cols-1 row-cols-md-3 g-4">
+
+ <asp:Repeater runat="server" ID="repRepetidor">
+ <ItemTemplate>
+<div class="col">
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title"><%#Eval("Nombre") %></h5>
+        <p class="card-text"><%#Eval("Descripcion") %></p>
+          
+          <asp:button text="Seleccionar" CssClass="btn btn-primary" runat="server" id="btnSeleccionar" CommandArgument='<%#Eval("Id") %>' CommandName="ArticuloId" OnClick="btnSeleccionar_Click" />
+      </div>
     </div>
-     <div>
-  <img src="..." class="img-thumbnail" alt="...">
-     <div>
-     <asp:Button Text="Premio 2" CssClass="btn btn-primary" ID="Button1" OnClick="Button1_Click" runat="server"/>
-         </div>
- </!--div>
-     <div>
- <img src="..." class="img-thumbnail" alt="...">
-     <div>
-     <asp:Button Text="Premio 3" CssClass="btn btn-primary" ID="Button2" OnClick="Button2_Click" runat="server"/>
-         </div>
- </div>
-
-
+</div>
+</ItemTemplate>
+        </asp:Repeater>
 
 
     </main>
